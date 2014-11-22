@@ -1,10 +1,16 @@
 " Vim syntax file
-" Language: lexc/twolc
+" Language: lexc
 " Maintainer: Jonathan Washington
 " Contributors: Brendan Malloy bbqsrc
 " Last Change: 2014-09-28
 " Version: 0.2
  
+" To use this you'll want to put
+" au BufRead,BufNewFile *.lexc set filetype=lexc
+" or similar in ~/.vim/ftdetect/lexc.vim
+
+" See http://wiki.apertium.org/wiki/Apertium-specific_conventions_for_lexc
+" for more information about this dialect of lexc
  
 if version < 600
   syntax clear
