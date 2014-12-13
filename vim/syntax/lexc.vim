@@ -1,14 +1,10 @@
 " Vim syntax file
 " Language: lexc
 " Maintainer: Jonathan Washington
-" Contributors: Brendan Malloy bbqsrc
-" Last Change: 2014-09-28
-" Version: 0.2
+" Contributors: Brendan Malloy bbqsrc; Olexiy Savenkov
+" Last Change: 2014-12-13
+" Version: 0.3
  
-" To use this you'll want to put
-" au BufRead,BufNewFile *.lexc set filetype=lexc
-" or similar in ~/.vim/ftdetect/lexc.vim
-
 " See http://wiki.apertium.org/wiki/Apertium-specific_conventions_for_lexc
 " for more information about this dialect of lexc
  
@@ -85,7 +81,5 @@ hi def link lexcApertiumMC              Label
 "hi def link lexcBrackets        Delimiter
 
  
-setlocal foldmethod=syntax 
-"setlocal foldlevel=20
-
+setlocal foldmethod=expr foldexpr=getline(v:lnum)=~'LEXICON'\|\|getline(v:lnum)=~'Multichar_Symbols'?'>1':'='
 let b:current_syntax = "lexc"
