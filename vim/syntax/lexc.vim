@@ -2,8 +2,8 @@
 " Language: lexc
 " Maintainer: Jonathan Washington
 " Contributors: Brendan Malloy bbqsrc; Olexiy Savenkov
-" Last Change: 2014-12-13
-" Version: 0.3
+" Last Change: 2014-12-14
+" Version: 0.31
  
 " See http://wiki.apertium.org/wiki/Apertium-specific_conventions_for_lexc
 " for more information about this dialect of lexc
@@ -81,5 +81,6 @@ hi def link lexcApertiumMC              Label
 "hi def link lexcBrackets        Delimiter
 
  
-setlocal foldmethod=expr foldexpr=getline(v:lnum)=~'LEXICON'\|\|getline(v:lnum)=~'Multichar_Symbols'?'>1':'='
+setlocal foldmethod=expr 
+setlocal foldexpr=getline(v:lnum)=~'^[^!]*LEXICON'\|\|getline(v:lnum)=~'^[^!]*Multichar_Symbols'?'>1':'='
 let b:current_syntax = "lexc"
