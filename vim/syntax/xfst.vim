@@ -1,7 +1,8 @@
 " Vim syntax file
 " Language:	XFST Scripts
 " Maintainer:	Ondrej Dusek
-" Last Change: 2011-02-05
+" Contributor:  Jonathan Washington
+" Last Change: 2016-02-21
 
 " Quit when a (custom) syntax file was already loaded
 if exists("b:current_syntax")
@@ -28,6 +29,7 @@ syn match       xfstOperator    "(\?@\?<\?->\?@\?)\?"
 syn match       xfstOperator    "<\?=>\?"
 syn match	xfstOperator	"\.x\."
 syn match	xfstOperator	"\.o\."
+syn keyword	xfstOperator	except
 syn match       xfstNorm        "%."
 
 " Strings
