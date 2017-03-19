@@ -37,8 +37,10 @@ syn match       xfstString      "{[^}]*}"
 syn match       xfstNorm        "\"[^\"]*\""
 
 " Comments
-syn match	xfstComment	"^!.*" contains=xfstTodo
+syn match	xfstComment	"^!.*" contains=xfstTodo,xfstSection
 syn match	xfstComment	"\s!.*"ms=s+1 contains=xfstTodo
+" Section comments
+syn match	xfstSection	"^!\{3,\}\s\+.*\s\+!\{3,\}"
 
 " Define the default highlighting.
 " Only used when an item doesn't have highlighting yet
@@ -50,6 +52,7 @@ hi def link xfstSpecChar        PreProc
 hi def link xfstKeyword 	Keyword
 hi def link xfstNorm            Identifier
 hi def link xfstString          String
+hi def link xfstSection         Label
 
 let b:current_syntax = "xfst"
 
