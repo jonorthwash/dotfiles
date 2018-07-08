@@ -29,7 +29,7 @@ syn match       xfstOperator    "(\?@\?<\?->\?@\?)\?"
 syn match       xfstOperator    "<\?=>\?"
 syn match	xfstOperator	"\.x\."
 syn match	xfstOperator	"\.o\."
-syn keyword	xfstOperator	except
+syn keyword	xfstOperator	except where in matched
 syn match       xfstNorm        "%."
 
 " Strings
@@ -40,7 +40,7 @@ syn match       xfstNorm        "\"[^\"]*\""
 syn match	xfstComment	"^!.*" contains=xfstTodo,xfstSection
 syn match	xfstComment	"\s!.*"ms=s+1 contains=xfstTodo
 " Section comments
-syn match	xfstSection	"^!\{3,\}\s\+.*\s\+!\{3,\}"
+syn match	xfstSection	"^!\{3,\}[\s=]\+.*[\s=]\+!\{3,\}"
 
 " Define the default highlighting.
 " Only used when an item doesn't have highlighting yet

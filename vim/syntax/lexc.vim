@@ -54,6 +54,8 @@ syn match lexcApertiumRightBrackets "%[}>\]]"
 
 syn match lexcApertiumMC "%[<{\[].\{-}%[>}\]]"hs=s+2,he=e-2 contains=lexcApertiumLeftBrackets,lexcApertiumRightBrackets
 
+syn match lexcSection	"^!\{3,\}\s\+.*\s\+!\{3,\}"
+
  
 hi def link lexcLabel                   Label
 hi def link lexcLexiconKeyword          Statement
@@ -74,6 +76,7 @@ hi def link lexcApertiumSpecial         PreCondit
 hi def link lexcApertiumLeftBrackets    Delimiter
 hi def link lexcApertiumRightBrackets   Delimiter
 hi def link lexcApertiumMC              Label
+hi def link lexcSection                 Section
 
 "hi def link lexcArchiphoneme    Label
 "hi def link lexcTag             Identifier
