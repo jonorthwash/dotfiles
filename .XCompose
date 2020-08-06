@@ -1,0 +1,41 @@
+include "%L"
+
+# Phonology symbols
+<Multi_key> <s> <i>		: "σ"  # Sigma
+
+# IPA symbols
+<Multi_key> <d> <r>		: "ɖ"  # Retroflex d
+<Multi_key> <t> <r>		: "ʈ"  # Retroflex t
+<Multi_key> <s> <r>		: "ʂ"  # Retroflex s
+<Multi_key> <z> <r>		: "ʐ"  # Retroflex z
+<Multi_key> <l> <r>		: "ɭ"  # Retroflex l
+<Multi_key> <n> <r>		: "ɳ"  # Retroflex n
+<Multi_key> <r> <r>		: "ɽ"  # Retroflex r
+<Multi_key> <d> <j>		: "ɟ"  # 
+<Multi_key> <z> <j>		: "ʑ"  # 
+<Multi_key> <c> <j>		: "ɕ"  # 
+<Multi_key> <t> <s>		: "ʦ"  # 
+<Multi_key> <d> <Z>		: "ʥ"  # 
+<Multi_key> <d> <z>		: "ʣ"  # 
+<Multi_key> <t> <C>		: "ʨ"  # 
+<Multi_key> <v> <v>		: "ʋ"  # 
+<Multi_key> <a> <q>		: "ɐ"  # 
+<Multi_key> <g> <g>		: "ɡ"  #
+
+# Other useful symbols
+<Multi_key> <o> <h>		: "Ω"  # Omega
+<Multi_key> <O> <h>		: "Ω"  # Omega
+
+# ARROWS
+<Multi_key> <Right> <Right> : "→"
+<Multi_key> <Left> <Left>   : "←"
+<Multi_key> <Up> <Up>       : "↑"
+<Multi_key> <Down> <Down>   : "↓"
+<Multi_key> <Left> <Right>  : "↔"
+<Multi_key> <Right> <Left>  : "↔"
+<Multi_key> <Up> <Down>     : "↕"
+<Multi_key> <Down> <Up>     : "↕"
+
+# check/X
+<Multi_key> <period> <slash>: "✔"
+<Multi_key> <X> <X>         : "✘"
